@@ -1,0 +1,28 @@
+<!--pages/shop/index.wxml-->
+<view wx:if="{{!commoditys.length}}" class="no-order">
+  <view>购物车快饿瘪了 T.T</view>
+  <text>快给我挑点宝贝</text>
+  <button type="press" bindtap='goshop'>去逛逛</button>
+</view>
+<view wx:else>
+  <view class="weui-cell" wx:for="{{commoditys}}" wx:key >
+    <navigator url="/pages/shopnews/index?name={{item.name}}" hover-class="navigator-hover">
+      <view class="weui-cell__hd" style="position: relative;margin-right: 10px;">
+        <image src="{{item.imgurl}}" class="menu-img" width="80px"></image>
+        <span class="weui-badge" style="position: absolute;top: -.4em;right: -.4em;">{{item.num}}</span>
+      </view>
+    </navigator>
+    <view class="weui-cell__bd">
+      <p>{{item.name}}</p>
+      <p style="font-size: 13px;color: #888888;">价格: {{item.price}}</p>
+    </view>
+    <view class="stepper">
+      <!-- 减号 -->
+      <text class="{{item.minusStatus}}" id="{{index}}" bindtap="bindMinus" data-item-num="{{item.num}}">-</text>
+      <!-- 数值 -->
+      <input type="number" id="{{index}}" bindchange="bindManual" value="{{item.num}}" data-item-num="{{item.num}}" />
+      <!-- 加号 -->
+      <text class="normal" id="{{index}}" bindtap="bindPlus" data-item-num="{{item.num}}">+</text>
+    </view>
+  </view>
+</view>

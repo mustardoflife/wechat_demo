@@ -1,0 +1,59 @@
+<!--pages/index/index.wxml-->
+<loading hidden="{{showload}}">正在加载</loading>
+
+<swiper indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}" circular="{{circular}}">
+  <block wx:for="{{imgUrls}}" wx:key>
+    <swiper-item>
+      <image src="{{item}}" class="slide-image" />
+    </swiper-item>
+  </block>
+</swiper>
+<view class="weui-search-bar" id="searchBar">
+  <form class="weui-search-bar__form">
+    <view class="weui-search-bar__box">
+      <icon type="search" size="18" class="icon-search" />
+      <input type="search" class="weui-search-bar__input" id="searchInput" placeholder="搜索" required="" />
+    </view>
+  </form>
+</view>
+<view class="nav-bar">
+  <navigator url="{{menu.path[index]}}" open-type='navigate' bindtap="showLoading" hover-class="none" wx:for="{{menu.imgUrls}}" wx:key class="menu-list">
+    <image class="menu-img" src="{{item}}" /> {{menu.navName[index]}}
+  </navigator>
+</view>
+<view class="line"></view>
+<view>
+  <scroll-view scroll-x="true" class="tab-h" scroll-left="{{scrollLeft}}">
+    <view class="tab-item {{currentTab==0?'active':''}}" data-current="0" bindtap="swichNav">健康</view>
+    <view class="tab-item {{currentTab==1?'active':''}}" data-current="1" bindtap="swichNav">情感</view>
+    <view class="tab-item {{currentTab==2?'active':''}}" data-current="2" bindtap="swichNav">职场</view>
+    <view class="tab-item {{currentTab==3?'active':''}}" data-current="3" bindtap="swichNav">育儿</view>
+    <view class="tab-item {{currentTab==4?'active':''}}" data-current="4" bindtap="swichNav">纠纷</view>
+    <view class="tab-item {{currentTab==5?'active':''}}" data-current="5" bindtap="swichNav">青葱</view>
+    <view class="tab-item {{currentTab==6?'active':''}}" data-current="6" bindtap="swichNav">全部</view>
+    <view class="tab-item {{currentTab==7?'active':''}}" data-current="7" bindtap="swichNav">其他</view>
+  </scroll-view>
+  <view class="loading" wx:if="{{loading}}">
+      <image src="../../accest/images/loading.gif"></image>
+  </view>
+  <swiper class="tab-content" current="{{currentTab}}" duration="300" bindchange="switchTab" style="height:{{winHeight}}rpx">
+    <swiper-item wx:for="{{[0,1,2,3,4,5,6,7]}}" wx:key>
+      <scroll-view scroll-y="true" class="scoll-h" bindscrolltoupper="showmore" >
+        <block wx:for="{{expertList}}" wx:key="*this">
+          <view class="item-ans">
+            <view class="avatar">
+              <image class="img" src="http://ookzqad11.bkt.clouddn.com/avatar.png"></image>
+            </view>
+            <view class="expertInfo">
+              <view class="name">{{item.name}}</view>
+              <view class="tag">{{item.tag}}</view>
+              <view class="answerHistory">{{item.answer}}个回答，{{item.listen}}人听过 </view>
+            </view>
+            <navigator  class="askBtn">{{item.search}}</navigator>
+          </view>
+        </block>
+      </scroll-view>
+    </swiper-item>
+  </swiper>
+</view>
+<view>已经到底了</view>

@@ -1,0 +1,13 @@
+/* pages/outfood/index.wxss */
+.lastday{
+  display: block;
+  padding-bottom:10rpx;
+  font-size:12pt;
+  color:#888;
+  text-align: center;
+  border-bottom:1px solid #888;
+}
+.list-show{
+  padding:10rpx;
+  text-align: center;
+}

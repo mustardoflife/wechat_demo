@@ -1,0 +1,8 @@
+{
+  "component": true,
+  "usingComponents": {},
+  "navigationBarTitleText": "小商城",
+  "enablePullDownRefresh": true,
+  "backgroundTextStyle": "drak"
+  
+}

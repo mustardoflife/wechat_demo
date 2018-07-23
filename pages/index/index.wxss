@@ -1,0 +1,184 @@
+/* pages/index/index.wxss */
+
+.slide-image {
+  width: 100%;
+  height: 100%;
+}
+
+.weui-search-bar__label {
+  vertical-align: inherit;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+::-webkit-scrollbar{
+  width:0;
+  height:0;
+  color:transparent;
+}
+.weui-icon-search {
+  margin-top: 27rpx;
+}
+
+.nav-bar {
+  display: flex;
+  justify-content: space-around;
+}
+
+.weui-search-bar__form {
+  height: 80rpx;
+}
+
+.weui-search-bar__box {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.icon-search {
+  position: absolute;
+  left: 20rpx;
+}
+
+.weui-search-bar__input {
+  position: absolute;
+  top: 15%;
+  width: 80%;
+  text-indent: 10;
+}
+
+.nav-bar {
+  width: 100%;
+  font-size: 14pt;
+  color: #888;
+  padding: 10rpx 0;
+  background-color: #fafcfd;
+  display: flex;
+}
+
+.menu-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.menu-img {
+  width: 120rpx;
+  height: 84rpx;
+}
+
+
+
+.tab-h {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+}
+
+.tab-h {
+  height: 80rpx;
+  width: 100%;
+  box-sizing: border-box;
+  overflow: hidden;
+  line-height: 80rpx;
+  background: #f7f7f7;
+  font-size: 16px;
+  white-space: nowrap;
+  z-index: 99;
+}
+
+.tab-item {
+  margin: 0 36rpx;
+  display: inline-block;
+}
+
+.tab-item.active {
+  color: #4675f9;
+  position: relative;
+}
+
+.tab-item.active:after {
+  content: "";
+  display: block;
+  height: 8rpx;
+  width: 52rpx;
+  background: #4675f9;
+  position: absolute;
+  bottom: 0;
+  left: 5rpx;
+  border-radius: 16rpx;
+}
+
+.item-ans {
+  width: 100%;
+  display: flex;
+  flex-grow: row no-wrap;
+  justify-content: space-between;
+  padding: 30rpx;
+  box-sizing: border-box;
+  height: 180rpx;
+  align-items: center;
+  border-bottom: 1px solid #f2f2f2;
+}
+
+.avatar {
+  width: 100rpx;
+  height: 100rpx;
+  position: relative;
+  padding-right: 30rpx;
+}
+
+.avatar .img {
+  width: 100%;
+  height: 100%;
+}
+
+.avatar .doyen {
+  width: 40rpx;
+  height: 40rpx;
+  position: absolute;
+  bottom: -2px;
+  right: 20rpx;
+}
+
+.expertInfo {
+  font-size: 12px;
+  flex-grow: 2;
+  color: #b0b0b0;
+  line-height: 1.5em;
+}
+
+.expertInfo .name {
+  font-size: 16px;
+  color: #000;
+  margin-bottom: 6px;
+}
+
+.askBtn {
+  width: 120rpx;
+  height: 60rpx;
+  line-height: 60rpx;
+  text-align: center;
+  font-size: 14px;
+  border-radius: 60rpx;
+  border: 1px solid #4675f9;
+  color: #4675f9;
+}
+
+
+.scoll-h {
+  height: 100%;
+}
+
+.loading{
+  width:100%;
+  height: 60rpx;
+  padding-top:30rpx;
+}
+.loading image{
+  width:30rpx;
+  height:30rpx;
+  display: block;
+  margin:auto;
+}

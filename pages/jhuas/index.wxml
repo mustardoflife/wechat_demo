@@ -1,0 +1,8 @@
+<!--pages/before/index.wxml-->
+
+<view class="weui-article" wx:for="{{list}}" wx:key style="box-shadow: rgba(0,0,0,0.3) 1px 3px 3px; ">
+  <rich-text class="title">{{item.title}}</rich-text>
+  <view class="url-img">
+    <image src="{{item.sourceurl}}"></image>
+  </view>
+</view>

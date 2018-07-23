@@ -1,0 +1,6 @@
+/* pages/start/index.wxss */
+.start-img{
+  display: block;
+  width:100%;
+  height:auto;
+}

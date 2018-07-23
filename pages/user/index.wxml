@@ -1,0 +1,27 @@
+<!--pages/user/index.wxml-->
+<view class="line"></view>
+<view class="user">
+  <view class="user-img">
+    <image src="{{userInfo.avatarUrl}}" class="userimg"></image>
+  </view>
+  <view class="username">{{userInfo.nickName}}</view>
+</view>
+<view class="line"></view>
+<view class="myorder">
+  <view class="lookall">
+    <text>我的订单</text>
+    <navigator class="allorder">全部订单 〉</navigator>
+  </view>
+</view>
+<view class='getaddress' bindtap="getaddress">获取当前位置: 纬度: {{latitude}},经度: {{longitude}}</view>
+<view class="chooseaddress" bindtap="moveToLocation" data-la-num="{{latitude}}" data-lo-num="{{longitude}}">点击选择收货地址:{{mobileLocation.address}}</view>
+<view class="section">
+  <view class="section__title">手机号码：{{inputValue}}</view>
+  <input bindinput="validatemobile" placeholder="请输入手机/电话号码" type="number" />
+</view>
+<view bindtap='createPicCode'>点击生成验证码
+</view>
+<view wx:if="{{createCodeShow}}">
+    <input placeholder='请输入验证吗' bindinput="bindKeyInput" data-code="{{createCode.text}}"></input><text wx:if="{{showWriteFalse}}">输入错误</text>
+    <image src="{{createCode.img_path_https}}" class="codepic"></image>
+  </view>

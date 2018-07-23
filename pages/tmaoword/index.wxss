@@ -1,0 +1,13 @@
+/* pages/now/index.wxss */
+.search-word{
+  display: block;
+  padding:12rpx;
+  font-size:13pt;
+  color: #888;
+  border-bottom: 1px solid #888;
+}
+.word-more{
+  font-size:8pt;
+  color:black;
+  padding:0 20rpx;
+}

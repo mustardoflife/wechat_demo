@@ -1,0 +1,8 @@
+{
+  "component": true,
+  "usingComponents": {},
+  "navigationBarTitleText": "搞笑动图",
+  "enablePullDownRefresh": true,
+  "backgroundTextStyle": "drak"
+  
+}

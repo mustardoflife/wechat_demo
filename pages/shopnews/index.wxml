@@ -1,0 +1,6 @@
+<!--pages/shopnews/index.wxml-->
+<view>
+  <text>商品详情页
+  密钥f481ed5b444224d04e35092adb36eddd</text>
+  <text>{{name}}</text>
+</view>

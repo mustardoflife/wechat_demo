@@ -1,0 +1,10 @@
+<!--pages/outfood/index.wxml-->
+<view wx:if="{{show}}" class='lastday'>下拉以加载更多内容</view>
+<view>
+  <view class="list-show" wx:for="{{list}}" wx:key>
+    <text class='item-title'>{{item.title}}</text><br/>
+    <text>发生于{{item.year}}年</text>
+    <image wx:if="{{item.img}}" src="{{item.img}}"></image>
+     <text wx:else="{{item.img}}" >暂无相关图片</text>
+  </view>
+</view>

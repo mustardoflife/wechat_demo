@@ -1,0 +1,2 @@
+<!--pages/start/index.wxml-->
+<image class="start-img" mode="widthFix" src="../../accest/images/start.jpg"></image>

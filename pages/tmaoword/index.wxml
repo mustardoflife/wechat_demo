@@ -1,0 +1,6 @@
+<!--pages/now/index.wxml-->
+<view wx:for="{{list}}" wx:key>
+  <text class="search-word">{{item.title}}({{item.tname}})</text>
+  <text class="word-more">{{item.summary}}</text>
+
+</view>

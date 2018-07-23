@@ -1,0 +1,39 @@
+/* pages/user/index.wxss */
+.user{
+  padding:70rpx 0 80rpx;
+
+}
+.user-img {
+  width: 150rpx;
+  height: 150rpx;
+  background-color: #fff;
+  margin: 0 auto;
+  border-radius: 50%;
+  box-shadow: rgba(0,0,0,0.3) 1px 3px 3px; 
+  overflow: hidden;
+}
+.userimg{
+  width: 150rpx;
+  height: 150rpx;
+}
+.username{
+  margin-top:20rpx;
+  width:100%;
+  color:#353535;
+  text-align: center;
+  font-size:13pt;
+}
+.myorder .lookall,.getaddress,.chooseaddress{
+  display: flex;
+  padding:8rpx 20rpx;
+  justify-content: space-between;
+  font-size:11pt;
+  border-bottom: 1px solid #f0f0f0;
+}
+.allorder{
+  color:#888;
+}
+.codepic{
+  width:200rpx;
+  height:50rpx;
+}

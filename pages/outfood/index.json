@@ -1,0 +1,7 @@
+{
+  "component": true,
+  "usingComponents": {},
+  "navigationBarTitleText": "历史上的今天",
+  "enablePullDownRefresh": true,
+  "backgroundTextStyle": "drak"
+}

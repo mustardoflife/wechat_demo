@@ -1,0 +1,16 @@
+<!--pages/after/index.wxml-->
+<view wx:for="{{list}}" wx:key>
+  <view class="weui-cells">
+    <view class="weui-cell">
+      <view class="weui-cell__bd">
+        <p>{{item.title}}</p>
+      </view>
+      <!-- <view class="weui-cell__ft">{{item.url}}</view> -->
+    </view>
+    <view class="weui-cell weui-cell_swiped">
+      <view class="weui-cell__bd">
+          <view class="weui-cell__ft">{{item.content}}</view>
+      </view>
+    </view>
+  </view>
+</view>

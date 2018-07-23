@@ -1,0 +1,39 @@
+/* pages/shop/index.wxss */
+@import "../../accest/style/weui.wxss";
+page{
+  background-color: #f8f8f8;
+}
+.no-order{
+  margin-top:100rpx;
+  font-size:17pt;
+  color:#888;
+  text-align: center;
+}
+.no-order text{
+  font-size:13pt;
+}
+.no-order button{
+  width:200rpx;
+  color:#09bb07;
+  background-color:#fff;
+}
+.menu-img{
+  width:100rpx;
+  height:100rpx;
+}
+.weui-badge{
+    display: inline-block;
+    padding: .15em .4em;
+    min-width: 8px;
+    border-radius: 18px;
+    background-color: #F43530;
+    color: #FFFFFF;
+    line-height: 1.2;
+    text-align: center;
+    font-size: 12px;
+    vertical-align: middle;
+}
+.weui-cell__bd{
+  display: flex;
+  flex-direction: column;
+}

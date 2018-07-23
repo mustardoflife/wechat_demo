@@ -1,0 +1,7 @@
+{
+  "component": true,
+  "usingComponents": {},
+  "navigationBarTitleText": "健康知识",
+  "enablePullDownRefresh": true,
+  "backgroundTextStyle": "drak"
+}
